@@ -19,14 +19,6 @@ class SevenOpMock: public Base{
                 virtual double evaluate(){return 7.5;}
                 virtual string stringify() {return "7.5";}
 };
-
-class NegOpMock: public Base{
-        public:
-                NegOpMock() {};
-                virtual double evaluate(){return -7.5;}
-                virtual string stringify() {return "-7.5";}
->>>>>>> 9aaff39e543b5e6fa712c973d87fe35a3dd92c75
-};
 class NegOpMock: public Base{
         public:
                 NegOpMock() {};
@@ -47,20 +39,5 @@ class IntOpMock: public Base{
                 virtual double evaluate(){return 1;}
                 virtual string stringify() {return "1";}
 };
-
-class TripleOpMock: public Base{
-        public:
-                TripleOpMock() {};
-                virtual double evaluate(){return 312.123;}
-                virtual string stringify() {return "312.123";}
-};
-
-class IntOpMock: public Base{
-        public:
-                IntOpMock() {};
-                virtual double evaluate(){return 1;}
-                virtual string stringify() {return "1";}
-};
-
 
 #endif //__OP_HPP__
