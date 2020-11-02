@@ -18,7 +18,7 @@ class Mult: public Base{
 	   return left->evaluate() * right->evaluate();
 	}
 	virtual string stringify(){
-	   return left->stringify() + "*" + right->stringify();
+	   return left->stringify() + " * " + right->stringify();
 	}
 };
 
