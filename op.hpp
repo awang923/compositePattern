@@ -19,7 +19,6 @@ class SevenOpMock: public Base{
                 virtual double evaluate(){return 7.5;}
                 virtual string stringify() {return "7.5";}
 };
-
 class NegOpMock: public Base{
         public:
                 NegOpMock() {};
@@ -40,6 +39,5 @@ class IntOpMock: public Base{
                 virtual double evaluate(){return 1;}
                 virtual string stringify() {return "1";}
 };
-
 
 #endif //__OP_HPP__
