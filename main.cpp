@@ -6,6 +6,8 @@
 #include "sub.hpp"
 #include "mult.hpp"
 #include "div.hpp"
+#include "pow.hpp"
+#include "rand.hpp"
 
 using namespace std;
 
@@ -22,5 +24,13 @@ int main() {
     Base* minus = new Sub(add, two);
 
     std::cout << minus->stringify() << " = " << minus->evaluate() << std::endl;
+    
+    Base* rand = new Rand();
+    Base* zero = new Op(0);
+    Base* one = new Op(1);
+    Base* power = new Pow(rand, zero);
+    Base* add1 = new Add(one, power);
+
+    cout << add1->stringify() << " = " << add1->evaluate() << endl;
     return 0;
 }
